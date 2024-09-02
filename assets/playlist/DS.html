@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+
+    <style>
+        .playlist{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .leacture{
+            display: flex;
+            margin-left: 30px;
+        }
+        .sec{
+            max-width: 400px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .lec{
+            max-width: 400px;
+            border-radius: 20px 20px 0 0 ;
+
+        }
+        .title{
+            padding-left:20px;
+            text-align: start;
+            font-size: 20px;
+            max-width: 300px;
+            display: flex;
+            justify-content:start;
+            align-items:start;
+        }
+        @media (max-width:900px) {
+            .leacture{
+                flex-direction: column;
+                margin-left: 0px;
+            }
+            .lec{
+                width: 300px;
+                display: flex;
+                
+            }
+            .sec{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="playlist">
+            <h1>Computer Networks:</h1>
+            <div class="leacture">
+                <div class="sec">
+                    <video src="DS/Introduction to Data Structures.mp4" controls class="lec"></video>
+                    <div class="title">
+                        <h3>Title:</h3>
+                        <h3>Introduction to Data Structures</h3>
+                    </div>
+                </div>
+                <div class="sec">
+                    <video src="DS/Introduction to Data Structures.mp4" controls class="lec"></video>
+                    <div class="title">
+                        <h3>Title:</h3>
+                        <h3>Introduction to Data Structures</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
